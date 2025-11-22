@@ -1,0 +1,124 @@
+=================================================================================================
+🎯 SKILLBRIDGE - SISTEMA DE RECOMENDAÇÃO DE CURSOS COM IA
+=================================================================================================
+
+GLOBAL SOLUTION - ARTIFICIAL INTELLIGENCE & CHATBOT
+INSTITUIÇÃO: FIAP
+DATA: NOVEMBRO 2025
+
+=================================================================================================
+👥 INTEGRANTES DO GRUPO
+=================================================================================================
+
+   BRUNO VINICIUS BARBOSA
+   RM: 566366
+   
+   JOÃO PEDRO BITENCOURT GOLDONI
+   RM: 564339
+  
+   MARINA TAMAGNINI MAGALHÃES
+   RM: 561786
+=================================================================================================
+📊 DESCRIÇÃO DO PROJETO
+=================================================================================================
+
+O SkillBridge é um sistema inteligente de recomendação de cursos que utiliza Machine Learning
+para personalizar sugestões baseadas no perfil do usuário.
+
+OBJETIVO:
+Ajudar profissionais a encontrarem os cursos mais relevantes para suas carreiras, considerando:
+- Carreira desejada
+- Nível de experiência
+- Tempo disponível
+- Escolaridade
+- Histórico de conclusão
+
+=================================================================================================
+🤖 MODELOS DE MACHINE LEARNING
+=================================================================================================
+
+MODELO 1: REGRESSÃO (Random Forest Regressor)
+-----------------------------------------
+• Objetivo: Prever score de relevância do curso (0-10)
+• Algoritmo: Random Forest com 100 árvores
+• Performance: R² = 0.9206, RMSE = 0.4791
+• Features: 13 variáveis (match_carreira, match_nivel, etc.)
+
+MODELO 2: CLASSIFICAÇÃO (Random Forest Classifier)
+-----------------------------------------------
+• Objetivo: Prever se o usuário vai concluir o curso
+• Algoritmo: Random Forest com 100 árvores
+• Performance: Acurácia = 100%, F1-Score = 100%
+• Features: 14 variáveis (progresso, match_carreira, etc.)
+
+=================================================================================================
+📁 ARQUIVOS ENTREGUES
+=================================================================================================
+
+✅ DATASET:
+   • dataset_treino.csv - 13.613 interações usuário-curso
+   • usuarios.csv - 2.500 usuários cadastrados
+
+✅ CÓDIGO:
+   • skillbridge_ml_notebook.ipynb - Análise e treinamento
+   • app.py - API REST Flask
+
+✅ MODELOS:
+   • modelo_regressao.pkl - Random Forest Regressor treinado
+   • modelo_classificacao.pkl - Random Forest Classifier treinado
+   • features.json - Configuração das features
+   • metricas_modelos.json - Métricas de desempenho
+
+✅ DOCUMENTAÇÃO:
+   • README.md - Documentação completa
+   • requirements.txt - Dependências do projeto
+   • integrantes.txt - Este arquivo
+
+=================================================================================================
+🔌 API REST - COMO USAR
+=================================================================================================
+
+1. INSTALAR DEPENDÊNCIAS:
+   $ pip install -r requirements.txt
+
+2. EXECUTAR API:
+   $ python app.py
+
+3. TESTAR:
+   $ curl http://localhost:5000/health
+
+4. FAZER RECOMENDAÇÃO:
+   POST http://localhost:5000/recomendar
+   Body: {
+     "usuario": {
+       "carreira_desejada": "Cientista de Dados",
+       "nivel_experiencia": "Intermediário",
+       "idade": 28,
+       ...
+     },
+     "cursos": [...],
+     "quantidade": 10
+   }
+
+=================================================================================================
+📈 RESULTADOS ALCANÇADOS
+=================================================================================================
+
+✅ Dataset realista com 13.613 interações
+✅ 2 modelos de ML com excelente performance (R²=92%, Acc=100%)
+✅ API REST funcional com 4 endpoints
+✅ Sistema pronto para integração em produção
+✅ Documentação completa e profissional
+
+=================================================================================================
+🎯 DIFERENCIAIS
+=================================================================================================
+
+1. Sistema completo end-to-end (dados → modelos → API)
+2. Dois modelos complementares trabalhando juntos
+3. Features engenheiradas baseadas em lógica de negócio
+4. API REST moderna e escalável
+5. Código limpo e bem documentado
+6. Pronto para uso real
+
+

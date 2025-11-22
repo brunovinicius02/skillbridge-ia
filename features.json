@@ -1,0 +1,33 @@
+{
+  "regressao": [
+    "nivel_experiencia_num",
+    "tempo_disponivel_semanal",
+    "idade",
+    "anos_experiencia",
+    "escolaridade_num",
+    "nivel_curso_num",
+    "carga_horaria",
+    "avaliacao_media",
+    "taxa_conclusao_media",
+    "popularidade_score",
+    "match_nivel",
+    "match_tempo",
+    "match_carreira"
+  ],
+  "classificacao": [
+    "nivel_experiencia_num",
+    "tempo_disponivel_semanal",
+    "idade",
+    "anos_experiencia",
+    "escolaridade_num",
+    "nivel_curso_num",
+    "carga_horaria",
+    "avaliacao_media",
+    "taxa_conclusao_media",
+    "popularidade_score",
+    "match_nivel",
+    "match_tempo",
+    "match_carreira",
+    "progresso"
+  ]
+}

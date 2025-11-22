@@ -1,0 +1,36 @@
+{
+  "modelo_regressao": {
+    "tipo": "Random Forest Regressor",
+    "objetivo": "Prever score de relev\u00e2ncia do curso (0-10)",
+    "metricas": {
+      "rmse_train": 0.3524,
+      "rmse_test": 0.4766,
+      "r2_train": 0.9561,
+      "r2_test": 0.9214
+    },
+    "n_features": 13,
+    "n_estimators": 100,
+    "random_state": 42
+  },
+  "modelo_classificacao": {
+    "tipo": "Random Forest Classifier",
+    "objetivo": "Prever se o usu\u00e1rio vai concluir o curso",
+    "metricas": {
+      "acuracia_train": 1.0,
+      "acuracia_test": 1.0,
+      "precision_test": 1.0,
+      "recall_test": 1.0,
+      "f1_score_test": 1.0,
+      "roc_auc_test": 1.0
+    },
+    "n_features": 14,
+    "n_estimators": 100,
+    "random_state": 42
+  },
+  "dataset": {
+    "total_registros": 13613,
+    "split_ratio": 0.8,
+    "treino": 10890,
+    "teste": 2723
+  }
+}
